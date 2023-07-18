@@ -9,4 +9,8 @@ jobs:
         
         steps:
         - name: Run shell commands
-          run: echo Testing action
+          run: |
+            echo Testing action
+            ls -alh
+            touch index.yml
+            
