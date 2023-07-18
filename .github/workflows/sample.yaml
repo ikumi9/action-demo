@@ -8,9 +8,10 @@ jobs:
         runs-on: ubuntu-latest
         
         steps:
+        - uses: actions/checkout@v3
+        
         - name: Run shell commands
           run: |
             echo Testing action
             ls -alh
-            touch index.yml
             
